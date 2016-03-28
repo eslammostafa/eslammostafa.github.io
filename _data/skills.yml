@@ -1,0 +1,29 @@
+- title: Go
+  image: go.png
+
+- title: NodeJs
+  image: nodejs.png
+
+- title: Python
+  image: python.png
+
+- title: PHP
+  image: php.png
+
+- title: C#
+  image: csharp.png
+
+- title: MongoDB
+  image: mongodb.png
+
+- title: MySQL
+  image: mysql.png
+
+- title: SQL Server
+  image: sqlserver.png
+
+- title: Git
+  image: git.png
+
+- title: Gnu/Linux
+  image: gnulinux.png

@@ -4,20 +4,28 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+    <h1 class="site-title">{{ site.title }}</h1>
+    <h2 class="site-subtitle">{{ site.subtitle }}</h2>
+  <!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <p style="text-align: center">{{ site.description }}</p>
+<br>
+  <h2>${Languages & Technologies} -></h2>
+  {% for skill in site.data.skills %}
+    <img class="skill" src="{{ site.url }}/assets/skills/{{ skill.image }}" alt="{{ skill.title }}">
+  <!-- <img class="skill" src="{{ site.url }}/assets/skills/python.png">
+  <img class="skill" src="{{ site.url }}/assets/skills/php.png">
+  <img class="skill" src="{{ site.url }}/assets/skills/csharp.png">
+  <img class="skill" src="{{ site.url }}/assets/skills/mongodb.png">
+  <img class="skill" src="{{ site.url }}/assets/skills/mysql.png">
+  <img class="skill" src="{{ site.url }}/assets/skills/sqlserver.png">
+  <img class="skill" src="{{ site.url }}/assets/skills/gnulinux.png">
+  <img class="skill" src="{{ site.url }}/assets/skills/git.png"> -->
+  {% endfor %}
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+  {{ highlight go }}
+  <h2>fmt.Printf("Experience\n")</h2>
+  {{ endhighlight }}
+  <h2>=> Education</h2>
+  <h2>=> Contact Information</h2>
 </div>
