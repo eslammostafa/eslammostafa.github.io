@@ -30,9 +30,10 @@
     font-weight: 300;
     line-height: 56px;
     letter-spacing: -1px;
-    margin-bottom: 0;
+    margin-bottom: 24px;
     color: #aaa;
     text-align: center;
+    border-bottom: 1px solid #eee;
 }
 
 .site-nav {
@@ -201,14 +202,24 @@
 .post-meta {
     font-size: $small-font-size;
     color: $grey-color;
+    float: right;
+}
+
+.post-summary {
+    color: #aaa !important;
+    display: block;
 }
 
 .post-link {
-    display: block;
-    font-size: 24px;
+    color: #333 !important;
+    display: inline-block;
+    font-size: 18px;
 }
 
-
+.post-link:hover {
+    color: #5badf0 !important;
+    border-bottom: 0 none !important;
+}
 
 /**
  * Posts
@@ -257,9 +268,52 @@
 
 
 // custom
+.separator {
+    display: block;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 24px;
+}
 .skill {
     width: 128px;
     height: 128px;
     margin-right: 16px;
     margin-bottom: 64px;
+}
+
+.headingbar {
+    padding-top: 12px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+    font-weight: bold;
+    
+    p {
+        font-size: 18px;
+    }
+}
+
+.text-gray {
+    color: #666;
+}
+
+.experience {
+    margin-bottom: 24px;
+    
+    .experience-title {
+        margin-top: -12px;
+    }
+}
+
+.project {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 24px;
+    
+    a {
+        
+    }
+    
+    p {
+        margin-top: -12px !important;
+        font-size: 14px;
+    }
 }

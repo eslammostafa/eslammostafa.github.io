@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Hello World"
+summary: "embracing jekyll and github pages"
 date:   2016-03-28 10:45:25 +0200
 categories: jekyll blog post ruby github
 ---

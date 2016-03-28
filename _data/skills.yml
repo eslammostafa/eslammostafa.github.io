@@ -4,6 +4,9 @@
 - title: NodeJs
   image: nodejs.png
 
+- title: Javascript
+  image: js.png
+
 - title: Python
   image: python.png
 
@@ -27,3 +30,12 @@
 
 - title: Gnu/Linux
   image: gnulinux.png
+  
+- title: Jekyll
+  image: jekyll.png
+
+- title: HTML
+  image: html5.png
+
+- title: CSS
+  image: css3.png

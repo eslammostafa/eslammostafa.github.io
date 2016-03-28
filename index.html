@@ -10,22 +10,28 @@ layout: default
 
   <p style="text-align: center">{{ site.description }}</p>
 <br>
-  <h2>${Languages & Technologies} -></h2>
-  {% for skill in site.data.skills %}
-    <img class="skill" src="{{ site.url }}/assets/skills/{{ skill.image }}" alt="{{ skill.title }}">
-  <!-- <img class="skill" src="{{ site.url }}/assets/skills/python.png">
-  <img class="skill" src="{{ site.url }}/assets/skills/php.png">
-  <img class="skill" src="{{ site.url }}/assets/skills/csharp.png">
-  <img class="skill" src="{{ site.url }}/assets/skills/mongodb.png">
-  <img class="skill" src="{{ site.url }}/assets/skills/mysql.png">
-  <img class="skill" src="{{ site.url }}/assets/skills/sqlserver.png">
-  <img class="skill" src="{{ site.url }}/assets/skills/gnulinux.png">
-  <img class="skill" src="{{ site.url }}/assets/skills/git.png"> -->
-  {% endfor %}
+    <section id="skills">
+        <div class="headingbar">
+            <p>Languages & Technologies</p>
+        </div>
+    {% for skill in site.data.skills %}
+        <img class="skill" src="{{ site.url }}/assets/skills/{{ skill.image }}"
+            alt="{{ skill.title }}" title="{{ skill.title }}">
+    {% endfor %}
+    </section>
 
-  {{ highlight go }}
-  <h2>fmt.Printf("Experience\n")</h2>
-  {{ endhighlight }}
-  <h2>=> Education</h2>
-  <h2>=> Contact Information</h2>
+    <section id="experience">
+        <div class="headingbar">
+            <p>Experience</p>
+        </div>
+        {% for job in site.data.experiences %}
+            <div class="experience">
+                <p><small class="text-gray">{{ job.start_date }} - {{ job.end_date }}</small><p>
+                <div class="experience-title">
+                    <strong>{{ job.title }}</strong><span class="text-gray"> - {{ job.company }}</span>
+                </div>
+            </div>
+        {% endfor %}
+   </section>
+
 </div>
