@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Racism while playing DOTA
-desc: two guys were harassing me for being arabic
+summary: two guys were harassing me for being arabic
 categories: racsim
 ---
 I was playing dota today, like i just do everyday, but today i was unlucky
