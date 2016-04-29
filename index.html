@@ -2,36 +2,32 @@
 layout: default
 ---
 
-<div class="home">
+<div class="container">
+    
+    {% include header.html %}
+    <!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
 
-    <h1 class="site-title">{{ site.title }}</h1>
-    <h2 class="site-subtitle">{{ site.subtitle }}</h2>
-  <!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
-
-  <p style="text-align: center">{{ site.description }}</p>
-<br>
-    <section id="skills">
-        <div class="headingbar">
-            <p>Languages & Technologies</p>
+    <div class="row">
+        <div class="col-xs-2">
+            {% include nav.html %}
         </div>
-    {% for skill in site.data.skills %}
-        <img class="skill" src="{{ site.url }}/assets/skills/{{ skill.image }}"
-            alt="{{ skill.title }}" title="{{ skill.title }}">
-    {% endfor %}
-    </section>
 
-    <section id="experience">
-        <div class="headingbar">
-            <p>Experience</p>
+        <div class="col-xs-8">
+            <!--<p style="text-align: center">{{ site.description }}</p>-->
+            <ul class="post-list">
+                {% for post in site.posts %}
+                <li>
+                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+                        {{ post.title }}
+                    </a>
+                <!--<span class="post-meta ">{{ post.date | date: "%b %-d, %Y" }}</span>-->
+                <p class="post-summary">
+                        {{ post.summary }}
+                    </p>
+                </li>
+                {% endfor %}
+            </ul>
         </div>
-        {% for job in site.data.experiences %}
-            <div class="experience">
-                <p><small class="text-gray">{{ job.start_date }} - {{ job.end_date }}</small><p>
-                <div class="experience-title">
-                    <strong>{{ job.title }}</strong><span class="text-gray"> - {{ job.company }}</span>
-                </div>
-            </div>
-        {% endfor %}
-   </section>
-
-</div>
+    </div>
+    
+</div> <!-- container -->

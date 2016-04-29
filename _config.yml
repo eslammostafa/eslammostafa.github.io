@@ -6,17 +6,13 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Eslam Mostafa
-subtitle: Generalist Software Engineer
+title: إسلام مصطفى
+subtitle: إلى اللا النهائية وما بعدها
 email: cseslam@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Curious Software Engineer with passion to open-source and free software.
-  Continously building & improving my CS fundamentals, making sure to be
-  always ahead of what technology has to offer.
-  <br><br>
-  I have been playing with Python, Gtk+, C#, Sql, NodeJS for quite sometime now
-  and looking forward to build libraries and tools in GoLang and study Machine
-  Learning to make smarter applications.
+description: >
+  مطور برمجيات فضولي٬ لا اتوقف عن التعلم. لدي شغف بالمصادر المفتوحة و البرمجيات الحرة.
+  احب كتابة ال APIs ولكن لدي رغبة في الدخول لعوالم اخرى بدافع التجربة.
+  حاليًا اقوم بتعلم لغة Go من خلال التطوع في مشاريع مفتوحة المصدر.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://eslammostafa.github.io" # the base hostname & protocol for your site
 # url: "http://localhost:4000" # the base hostname & protocol for your site
