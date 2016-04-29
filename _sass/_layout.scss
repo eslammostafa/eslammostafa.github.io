@@ -10,28 +10,6 @@
     position: relative;
 }
 
-.site-title {
-    font-size: 26px;
-    font-weight: 300;
-    line-height: 56px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
-
-    &,
-    &:visited {
-        color: $grey-color-dark;
-    }
-}
-
-.site-subtitle {
-    font-weight: 300;
-    line-height: 56px;
-    letter-spacing: -1px;
-    margin-bottom: 24px;
-    margin-top: -18px;
-    color: #aaa;
-}
-
 .site-nav {
     float: right;
     margin-right: 24px;
@@ -222,7 +200,8 @@
  * Posts
  */
 .post-header {
-    margin-bottom: $spacing-unit;
+  padding-top: 8px;
+    margin-bottom: $spacing-unit/2;
 }
 
 .post-title {
@@ -285,7 +264,7 @@
     border-bottom: 1px solid #eee;
     border-top: 1px solid #eee;
     font-weight: bold;
-    
+
     p {
         font-size: 18px;
     }
@@ -297,7 +276,7 @@
 
 .experience {
     margin-bottom: 24px;
-    
+
     .experience-title {
         margin-top: -12px;
     }
@@ -306,11 +285,11 @@
 .project {
     border-bottom: 1px solid #eee;
     margin-bottom: 24px;
-    
+
     a {
-        
+
     }
-    
+
     p {
         margin-top: -12px !important;
         font-size: 14px;
@@ -320,8 +299,77 @@
 .nav-stacked {
     float: left;
     text-align: left;
-    
+
     li a {
         color: #666;
     }
+}
+
+
+header {
+    padding-top: 60px;
+    z-index: 1;
+    width: 100%;
+    display: block;
+    margin-bottom: 60px;
+    overflow: hidden;
+
+    .site-title a {
+      color: #fff;
+      font-size: 26px;
+      font-weight: 300;
+      letter-spacing: -1px;
+    }
+
+    .site-title a:hover {
+      text-decoration: none;
+    }
+
+    .site-subtitle {
+      color: #eee;
+    }
+}
+
+
+.slope {
+    background-color: #4c5c96;
+    // background-color: #F2F1ED;
+    transform: rotate(3deg);
+    transform-origin: right center;
+
+    .container {
+      // padding: 130px;
+      padding: 120px 100px 20px 100px;
+      transform: rotate(-3deg);
+    }
+}
+
+header .slope {
+  margin: 0 -50px;
+  margin-top: -100px;
+  // height: 300px;
+}
+
+footer {
+  clear: both;
+  bottom: 0;
+}
+
+.social-list {
+  list-style: none;
+  float: left;
+
+  li {
+    display: inline;
+    min-width: 16px;
+    margin-left: 8px;
+  }
+  li a {
+    // color: rgba(255,255,255,0.5);
+    color: rgba(255,255,255,0.5);
+  }
+
+  li a:hover {
+    color: #ddd;
+  }
 }
