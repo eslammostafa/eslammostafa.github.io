@@ -199,7 +199,7 @@
 .post-meta {
     font-size: $small-font-size;
     color: $grey-color;
-    float: left;
+    float: right;
 }
 
 .post-summary {
@@ -237,9 +237,11 @@
 
 .post-content {
     margin-bottom: $spacing-unit;
+    float: right;
+    text-align: right;
 
     h2 {
-        font-size: 32px;
+        font-ssize: 32px;
 
         @include media-query($on-laptop) {
             font-size: 28px;
