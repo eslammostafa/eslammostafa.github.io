@@ -1,12 +1,19 @@
 /**
  * Syntax highlighting styles
  */
+code {
+  background-color: inherit;
+}
 .highlight {
-    background: #fff;
+    background: #444;
+    color: #fff;
+    text-align: left;
+    direction: ltr;
+
     @extend %vertical-rhythm;
 
     .highlighter-rouge & {
-      background: #eef;
+      background: #444;
     }
 
     .c     { color: #998; font-style: italic } // Comment

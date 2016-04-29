@@ -1,0 +1,63 @@
+---
+layout: post
+title: كيف استخدم قاعدة البيانات مونجو مع جو ؟
+summary: يمكنك استخدام مكتبة mgo للاتصال بقاعدة البيانات واجراء عمليات ال queries او غيرها
+tags: mgo go جو mongodb مونجو قاعدة_بيانات
+---
+
+يوجد مكتبة mgo الرائعة التي كتبت من أجل قاعدة البينات mongodb. سنرى سويًا كيف يمكننا تثبيت مكتبة mgo
+واستخدام ال struct من اجل ال queries الخاصة بنا.
+
+#### تأكد أولًا انك قمت بإضافة مسار مجلد العمل الي $PATH
+تحتاج مساعدة ؟ [انظر الى شرح تثبيت لغة جو](http://eslammostafa.com)
+
+تثبيت مكتبة mgo
+----
+
+يمكننا ان نجد الكود المصدري [هنا](http://gopk.in/mgo.v2). من خلال سطر الأ،امر
+
+  $ go get http://gopkg.in/mgo.v2
+
+ داخل التطبيق الذي تعمل عليه نقوم عمل import ل mgo كالتالي:
+
+{% highlight go linenos %}
+    import (
+        ...
+        "gopkg.in/mgo.v2"
+        "gopkg.in/mgo.v2/bson"
+        ...
+        "time"
+    )
+{% endhighlight %}
+
+والان نقوم بعمل اتصال بقاعدة البيانات
+
+{% highlight go linenos %}
+    func main() {
+        session, err := mgo.Dial("localhost")
+        if err != nil {
+            panic(err)
+        }
+        defer session.Close()
+
+        db := session.DB("test")
+    }
+{% endhighlight %}
+// مثال على struct
+{% highlight go linenos %}
+    type Post struct {
+        ID bson.ObjectId
+        Title string
+        Content string
+        Tags []string
+        AuthorName string
+        PublishDate time.Time
+    }
+
+
+    func main() {
+        ...
+        posts := []Post{}
+        db.C("posts").find(nil).All(&posts)
+    }
+{% endhighlight %}
