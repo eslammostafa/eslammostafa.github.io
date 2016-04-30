@@ -8,8 +8,11 @@ tags: mgo go جو mongodb مونجو قاعدة_بيانات
 يوجد مكتبة mgo الرائعة التي كتبت من أجل قاعدة البينات mongodb. سنرى سويًا كيف يمكننا تثبيت مكتبة mgo
 واستخدام ال struct من اجل ال queries الخاصة بنا.
 
+{: .text-center}
+![gologo]({{ site.url }}/assets/posts/mongo.png)
+
 #### تأكد أولًا انك قمت بإضافة مسار مجلد العمل الي $PATH
-تحتاج مساعدة ؟ [انظر الى شرح تثبيت لغة جو](http://eslammostafa.com)
+تحتاج مساعدة ؟ [انظر الى شرح تثبيت لغة جو](http://eslammostafa.com/2016/04/29/%D9%83%D9%8A%D9%81-%D8%A3%D9%82%D9%88%D9%85-%D8%A8%D8%AA%D8%AB%D8%A8%D9%8A%D8%AA-%D9%84%D8%BA%D8%A9-Go.html)
 
 تثبيت مكتبة mgo
 ----
