@@ -6,12 +6,12 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: إسلام مصطفى
-subtitle: إلى اللا النهائية وما بعدها
+title: Eslam Mostafa
+subtitle: To The Infinity & What's beyond
 email: cseslam@gmail.com
 description: >
-  مطور برمجيات فضولي٬ لا اتوقف عن التعلم. لدي شغف بالمصادر المفتوحة و البرمجيات الحرة.
-  اعمل على كتابة ال APIs وتطبيقات سطح المكتب لويندوز ولينكس.
+    Curious software engineer, who don't stop exploring and learning. Very passionate about open
+    source software. My current proficiency is creating APIs & writing tech articles in Arabic.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://eslammostafa.com" # the base hostname & protocol for your site
 # url: "http://localhost:4000" # the base hostname & protocol for your site

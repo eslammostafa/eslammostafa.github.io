@@ -1,16 +1,29 @@
 ---
 layout: default
----    
+---
     <!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
+
 <div class="container">
-
     <div class="row">
-        <div class="col-xs-2">
-            {% include nav.html %}
+        <div class="col-xs-12">
+            <p>{{ site.description }}</p>
         </div>
+    </div>
+</div>
 
-        <div class="col-xs-8">
-            <!--<p style="text-align: center">{{ site.description }}</p>-->
+<div class="page-breaker">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h4 class="title"><span class="fa fa-newspaper-o"></span> Latest Blog Posts</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
             <ul class="post-list">
                 {% for post in site.posts %}
                 <li>
@@ -26,5 +39,83 @@ layout: default
             </ul>
         </div>
     </div>
-    
-</div> <!-- container -->
+</div>
+
+<div class="page-breaker">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h4 class="title"><span class="fa fa-github-alt"></span> Technologies & Languages</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="skills">
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            {% for skill in site.data.skills %}
+                <img class="skill" src="{{ site.url }}/assets/skills/{{ skill.image }}"
+                    alt="{{ skill.title }}" title="{{ skill.title }}">
+            {% endfor %}
+        </div>
+    </div>
+</div>
+</section>
+
+<div class="page-breaker">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h4 class="title"><span class="fa fa-bug"></span> Projects</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <ul class="post-list">
+                {% for p in site.data.projects %}
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="project">
+                                <h4><a href="{{ p.uri }}" target="_blank">{{ p.title }}</a></h4>
+                                <p>{{ p.desc }}</p>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="page-breaker">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h4 class="title"><span class="fa fa-tasks"></span> Experience</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="experience">
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            {% for job in site.data.experiences %}
+                <div class="experience">
+                    <p><small class="text-gray">{{ job.start_date }} - {{ job.end_date }}</small><p>
+                    <div class="experience-title">
+                        <p>{{ job.title }} @ <span class="company-name">{{ job.company }}</span></p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+</div>
