@@ -1,0 +1,23 @@
+<header>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1 class="site-title"><a href="/">{{ site.title }}</a></h1>
+          <ul class="social-list">
+              <li><a href="http://linkedin.com/in/eslammostafa" target="_blank"><span class="fa fa-fw fa-lg fa-linkedin"></span></a></li>
+              <li><a href="http://github.com/eslammostafa" target="_blank"><span class="fa fa-fw fa-lg fa-github-alt"></span></a></li>
+              <li><a href="http://twitter.com/thedvlpr" target="_blank"><span class="fa fa-fw fa-lg fa-twitter"></span></a></li>
+              <li><a href="http://medium.com/@eslammostafa" target="_blank"><span class="fa fa-fw fa-lg fa-medium"></span></a></li>
+              <li><a href="mailto:cseslam@gmail.com" target="_blank"><span class="fa fa-fw fa-lg fa-envelope"></span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-4">
+            <!-- <p class="site-subtitle">{{ site.description }}</p> -->
+          <!-- <p class="site-subtitle">{{ site.subtitle }}</p> -->
+          <br >
+        </div>
+      </div>
+  </div>
+</header>

@@ -10,19 +10,13 @@ permalink: /experience
 
 
   <div class="row">
-      <div class="col-xs-2">
-          {% include nav.html %}
-      </div>
 
-       <div class="col-xs-10">
+       <div class="col-xs-12">
                 <section id="skills">
                     <div class="headingbar">
                         <p>اللغات و التقنيات</p>
                     </div>
-                {% for skill in site.data.skills %}
-                    <img class="skill" src="{{ site.url }}/assets/skills/{{ skill.image }}"
-                        alt="{{ skill.title }}" title="{{ skill.title }}">
-                {% endfor %}
+                    {% include langs.html %}
                 </section>
 
                 <section id="experience">

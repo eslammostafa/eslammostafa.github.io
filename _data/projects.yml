@@ -1,18 +1,19 @@
-- title: Garson
-  uri: "http://github.com/eslammostafa/garson"
-  desc: "http router(mux) for Golang"
+- title: This Webiste
+  type: personal
+  uri: http://github.com/eslammostafa/eslammostafa.github.io
+  desc: my personal website, built with jekyll server and github pages
 
-- title: Msar Academy
-  uri: "http://github.com/msaracademy"
-  desc: "an expirement for open source blog, where everyone can contribute<br>based on Jekyll"
+- title: Garson
+  type: personal
+  uri: http://github.com/eslammostafa/garson
+  desc: "simple opensource HTTP router(mux) for Go"
 
 - title: Bankam
-  uri: "https://github.com/eslammostafa/bankam"
+  type: personal
+  uri: https://github.com/eslammostafa/bankam
   desc: "-"
 
-
-
-
-
-
-
+- title: Tahrir
+  type: personal
+  uri: https://github.com/eslammostafa/tahrir
+  desc: "simple text editor for gnome"

@@ -10,8 +10,10 @@ title: Eslam Mostafa
 subtitle: To The Infinity & What's beyond
 email: cseslam@gmail.com
 description: >
-    Curious software engineer, who don't stop exploring and learning. Very passionate about open
-    source software. My current proficiency is creating APIs & writing tech articles in Arabic.
+    I am curious software engineer, who don't stop exploring and learning. Very
+    passionate about open source software. My current proficiency is creating APIs.
+    This site contains alot of my thoughts about software designing and reviewing
+    new technologies.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://eslammostafa.com" # the base hostname & protocol for your site
 # url: "http://localhost:4000" # the base hostname & protocol for your site

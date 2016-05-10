@@ -28,9 +28,24 @@
 - title: Git
   image: git.png
 
+- title: Ruby
+  image: ruby.png
+
+- title: Ruby On Rails
+  image: Ruby_on_Rails.png
+
+- title: Wordpress
+  image: wordpress.png
+
 - title: Gnu/Linux
   image: gnulinux.png
-  
+
+- title: Atom
+  image: atom.png
+
+- title: Microsoft Visual Studio
+  image: vsutdio.jpg
+
 - title: Jekyll
   image: jekyll.png
 

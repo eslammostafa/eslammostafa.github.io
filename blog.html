@@ -5,19 +5,15 @@ permalink: /blog
 ---
 
 <div class="container">
-
-  <!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
-
-
-  <div class="row">
-      <div class="col-xs-2">
-          {% include nav.html %}
-      </div>
-
-       <div class="col-xs-10">
-            <p>{{ site.description }}</p>
-            <br>
-
+    <div class="row">
+       <div class="col-xs-12">
+           <div class="box box-default">
+               <div class="box-content">
+                    {% for post in site.posts %}
+                    <h4><a href="{{ post.id }}">{{ post.title }}</a></h4>
+                    {% endfor %}
+                </div>
+            </div>
         </div>
     </div>
 </div>

@@ -3,6 +3,10 @@
     src: url("../assets/fonts/HelveticaNeue.ttf") format("ttf");
 }
 
+a {
+    color: #4c5c96;
+}
+
 /**
  * Site header
  */
@@ -182,7 +186,6 @@
 .post-meta {
     font-size: $small-font-size;
     color: $grey-color;
-    float: right;
 }
 
 .post-summary {
@@ -221,8 +224,6 @@
 
 .post-content {
     margin-bottom: $spacing-unit;
-    float: right;
-    text-align: right;
 
     h2 {
         font-ssize: 32px;
@@ -256,11 +257,20 @@
     border-bottom: 1px solid #eee;
     margin-bottom: 24px;
 }
+
 .skill {
+    display: inline-block;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    background-color: white;
+    padding: 24px;
+    box-shadow: 3px 10px -3px rgba(0, 0, 0, 0.4);
+}
+
+.skill img {
     width: 64px;
     height: 64px;
-    margin-right: 16px;
-    margin-bottom: 64px;
+
 }
 
 .headingbar {
@@ -283,20 +293,21 @@
     margin-bottom: 24px;
 
     .experience-title {
-        margin-top: -12px;
     }
+
+
 }
 
 .project {
-    border-bottom: 1px solid #eee;
     margin-bottom: 24px;
+    color: #6e6e6e;
 
     a {
-
+        color: #4c5c96;
     }
 
     p {
-        margin-top: -12px !important;
+        margin-top: -12px;
         font-size: 14px;
     }
 }
@@ -324,12 +335,15 @@ header {
     display: block;
     margin-bottom: 24px;
     overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
 
     .site-title a {
       color: #4c5c96;
       font-size: 26px;
       font-weight: 300;
       letter-spacing: -1px;
+      text-align: center;
     }
 
     .site-title a:hover {
@@ -366,7 +380,9 @@ footer {
 
 .social-list {
   list-style: none;
-  float: left;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
 
   li {
     display: inline;
@@ -387,8 +403,61 @@ footer {
     padding: 24px 0 8px 0;
     background-color: #4c5c96;
     margin-bottom: 24px;
+    color: #efefef;
+    margin-top: -24px;
 }
 
+.page-breaker p {
+    margin-left: 24px;
+}
 .title {
+    color: #fff;
+}
+
+.company-name {
+    font-weight: bold;
+}
+
+.navbar-custom {
+    background-color: #fff;
+}
+
+.navbar-brand {
+    color: #4c5c96 !important;
+}
+
+.navbar-right a {
+    color: #4c5c96 !important;
+}
+
+.navbar .nav a:hover {
+    color: #4c5c96 !important;
+}
+
+.box {
+    box-shadow: 10px -12px -10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 24px;
+}
+
+.box-content {
+    padding: 24px;
+}
+
+.box-default {
+    background-color: #fff;
+}
+
+.box-default a {
+    color: #000;
+}
+
+.box-default a:hover {
+    color: #4c5c96;
+    text-decoration: none;
+}
+
+.box-default .box-title {
+    background-color: #4c5c96;
+    padding: 12px 24px;
     color: #fff;
 }
