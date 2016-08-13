@@ -1,7 +1,8 @@
-- title: API Developer (Freelance)
-  company: Koshkelmedia
-  start_date: "March 2016"
-  end_date: "Apr 2016"
+- title: Backend Engineer
+  company: CloudInn
+  company_url: http://cloudinn.net
+  start_date: "May 2016"
+  end_date: "Present"
   desc: "blah blah"
   uri: http://koshkelmedia.com
 
@@ -31,10 +32,3 @@
   end_date: "Apr 2014"
   desc: "blah blah"
   uri: http://topchoiceadmissions.com
-
-- title: Software Developer
-  company: GNOME Foundation
-  start_date: "Apr 2013"
-  end_date: "Oct 2013"
-  desc: "blah blah"
-  uri: http://gnome.org

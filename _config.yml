@@ -7,10 +7,10 @@
 
 # Site settings
 title: Eslam Mostafa
-subtitle: To The Infinity & What's beyond
+subtitle: To Infinity & Beyond
 email: cseslam@gmail.com
 description: >
-    I am curious software engineer, who don't stop exploring and learning. Very
+    I am a curious software engineer, who don't stop exploring and learning. Very
     passionate about open source software. My current proficiency is creating APIs.
     This site contains alot of my thoughts about software designing and reviewing
     new technologies.
@@ -19,6 +19,14 @@ url: "http://eslammostafa.com" # the base hostname & protocol for your site
 # url: "http://localhost:4000" # the base hostname & protocol for your site
 #twitter_username: jekyllrb
 github_username:  eslammostafa
-
+linkedin_url: "http://linkedin.com/in/eslammostafa"
+twitter_username: emostafa_
+medium_url: https://medium.com/@eslammostafa
+long_description: >
+    Programming is a passion that feeds my soul. I make sure to keep learning and trying
+    bleeding edge technologies, i have concerned lately with Backend Development;
+    lately i have been keeping eye on languages like Go. Sometimes i need to
+    use Frontend technologies like Angular 2; and i am bulding the frontend
+    of my personal project "Chahbandr" with Angular 2.
 # Build settings
 markdown: kramdown

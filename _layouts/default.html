@@ -3,10 +3,39 @@
 
   {% include head.html %}
 
-  {% include header.html %}
+  <!-- {% include header.html %} -->
 
   <body>
+      <div class="container">
+          <div class="row">
+              <div class="col-xs-3">
+                  <h1 class="brand"><a href="/">{{ site.title }}</a></h1>
+                  <h4 class="text-xs-center text-muted">Software Engineer</h4>
+                  <h6 class="text-xs-center text-muted">
+                      Backend Engineer @
+                      <a href="http://cloudinn.net" target="_blank">
+                          CloudInn
+                      </a>
+                  </h6>
+                  <br >
+                  <img src="/assets/img/profile.jpg" height="160" class="img-profile img-circle">
+
+                  <!-- sidebar  -->
+                  <ul class="nav nav-inline center-block social-nav">
+                      <a href="{{ site.linkedin_url }}" class="nav-link linkedin" target="_blank"><span class="fa fa-lg fa-linkedin"></span></a>
+                      <a href="{{ site.github_url }}" class="nav-link github" target="_blank"><span class="fa fa-lg fa-github-alt"></span></a>
+                      <a href="{{ site.twitter_url }}" class="nav-link twitter" target="_blank"><span class="fa fa-lg fa-twitter"></span></a>
+                      <a href="{{ site.medium_url }}" class="nav-link medium" target="_blank"><span class="fa fa-lg fa-medium"></span></a>
+                      <a href="mailto:{{ site.email }}" class="nav-link email" target="_blank"><span class="fa fa-lg fa-envelope"></span></a>
+                  </ul>
+                  <br>
+                  <p class="text-muted">{{ site.long_description }}</p>
+              </div>
+              <div class="col-xs-9">
                   {{ content }}
+              </div>
+          </div>
+      </div>
   </body>
 
   <!-- {% include footer.html %} -->

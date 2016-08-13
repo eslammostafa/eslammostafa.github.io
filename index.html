@@ -11,37 +11,161 @@ layout: default
     </div>
 </div> -->
 
-<div class="page-breaker">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h4 class="title"><span class="fa fa-hashtag"></span> To the infinity & beyond.</h4>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12">
-                <p>{{ site.description }}</p>
-                <p>I always tend to learn and discover new technologies, it's curiosity. Here is
-                    a list for the technologie i use -or have used- in current and previous projects</p>
-            </div>
-        </div>
+<div class="row">
+    <div class="col-xs-12">
+        <h3>To Infinity & Beyond</h3>
+        <hr>
+        <br>
+        <p>Hey there, this is Eslam Mostafa, saying hello from <span class="text-danger">Egypt</span>.</p>
+        <p>I am a passionate & curious Software Engineer, been contributing to GNOME apps,</p>
+        <p>and once joined <span class="text-success">Google Summer of Code</span> on 2013.</p>
+        <br/>
+        <p>My blog contains a lot of interesting posts, technical posts, about ideas i suddenly have,
+        or issues i met through my programming adventures and how i tackled them,
+        <span class="text-primary">Stay Tuned.</span>
+        </p>
     </div>
 </div>
-
-{% include langs.html %}
-
-<div class="container">
-    <div class="row">
-       <div class="col-xs-12">
-           <div class="box box-default">
-               <h4 class="box-title">Latest Blog Posts</h4>
-               <div class="box-content">
-                    {% for post in site.posts limit:3 %}
-                    <h4><a href="{{ post.id }}">{{ post.title }}</a></h4>
+<!--
+<div class="row">
+    <div class="col-xs-12">
+        <h3>Latest Posts</h3>
+        <hr>
+        {% for post in site.posts limit:5 %}
+        <div class="articles-list">
+            <div class="article-row">
+                <a href="{{ post.id }}" class="article-title">
+                    {{ post.title }}
+                </a>
+                <div class="article-row-tags">
+                    <span class="article-pub-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+                    <ul class="tags-list">
+                    {% for tag in post.tags %}
+                        <li><a href="/tag/{{ tag }}" target="_blank">{{ tag }}</a></li>
                     {% endfor %}
-                    <a class="text-gray" href="/blog">More posts</a>
-              </div>
+                    </ul>
+                </div>
+                <p class="article-row-summary">
+                    {{ post.summary }}
+                </p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div> -->
+
+<div class="row">
+    <div class="col-xs-12">
+        <br>
+        <h3>Active Projects</h3>
+        <hr>
+        <br>
+        <div class="row">
+            <div class="col-xs-6">
+                <div class="card card-inverse card-success card-teal">
+                    <div class="card-block">
+                        <h4 class="card-title">Msar Academy</h4>
+                        <p class="card-text">Msar is an online platform that brings a variant set of programmers together
+                            to write an arabic educational content in the variant programming fields.</p>
+                        <br/>
+                        <br/>
+                        <a href="http://msaracademy.com" class="card-link">Visit MsarAcademy</a>
+                    </div>
+                </div>
+                <br>
+            </div>
+
+            <div class="col-xs-6">
+                <div class="card card-inverse card-primary">
+                    <div class="card-block">
+                        <h4 class="card-title">Chahbandr</h4>
+                        <p class="card-text">Chahbandr is an online platform for selling & buying handmade products
+                            in the Middle East region. It makes it easier for artisans to increase thier
+                            sales through variant chahbandr tools.</p>
+                        <br>
+                        <a href="http://chahbandr.com" class="card-link">Visit Chahbandr</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
+
+
+<div class="row">
+    <div class="col-xs-12">
+        <h3>Skills & Technologies</h3>
+        <hr>
+        <br>
+        <div class="row">
+        {% for skill in site.data.skills %}
+            <div class="col-xs-2">
+                <div class="skill" style="background-image: url(/assets/skills/{{ skill.image }})">
+                    <!-- <img src="/assets/skills/{{ skill.image }}" class="img-responsive" alt="{{ skill.title }}"> -->
+                </div>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <br>
+        <h3>Experience</h3>
+        <hr>
+        <br>
+        {% for job in site.data.experiences %}
+            <div class="experience">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <p>{{ job.start_date }} - {{ job.end_date }}</p>
+                    </div>
+                    <div class="col-xs-9">
+                        <div class="experience-title">
+                            <h5><a href="job.company_url" class="{% if job.end_date == 'Present' %}present{% endif %}">{{ job.company }}</a> <small class="text-muted">- {{ job.title }}</small></h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="offset-xs-3 col-xs-9">
+                        <p>{{ job.desc }}</p>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <br>
+        <h3>Contributions</h3>
+        <hr>
+        <br>
+        {% for job in site.data.contributions %}
+            <div class="experience">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <p>{{ job.start_date }} - {{ job.end_date }}</p>
+                    </div>
+                    <div class="col-xs-9">
+                        <div class="experience-title">
+                            <h4><a href="job.company_url">{{ job.company }}</a> <small>{{ job.title }}</small></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="offset-xs-3 col-xs-9">
+                        <p>{{ job.desc }}</p>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+
+    <!-- end  -->

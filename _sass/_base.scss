@@ -1,6 +1,16 @@
 @font-face {
     font-family: "Helvetica";
-    src: url("../assets/fonts/HelveticaNeue.ttf") format("ttf");
+    src: url("/assets/fonts/HelveticaNeue.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "ApexNewBook";
+    src: url('/assets/fonts/Apex\ New\ Book.otf');
+}
+
+@font-face {
+    font-family: "ApexNewLight";
+    src: url('/assets/fonts/Apex\ New\ Light.otf');
 }
 
 
@@ -34,181 +44,139 @@ body {
 
 
 
-/**
- * Set `margin-bottom` to maintain vertical rhythm
- */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
-%vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
-    font-family: "Helvetica";
+body {
+    background-color: #fff;
+    font-family: "ApexNewBook", Arial;
+    padding-top: 35px;
 }
 
-
-
-/**
- * Images
- */
-img {
-    max-width: 100%;
-    vertical-align: middle;
-}
-
-
-
-/**
- * Figures
- */
-figure > img {
-    display: block;
-}
-
-figcaption {
-    font-size: $small-font-size;
-}
-
-
-
-/**
- * Lists
- */
-ul, ol {
-    margin-left: $spacing-unit;
-}
-
-li {
-    > ul,
-    > ol {
-         margin-bottom: 0;
-    }
-}
-
-
-
-/**
- * Headings
- */
 h1, h2, h3, h4, h5, h6 {
-    font-weight: $base-font-weight;
+    font-family: "ApexNewBook", Arial !important;
 }
 
+.brand {
+    color: #4c5c96;
+    text-align: center;
+    font-size: 42px;
 
+}
 
-/**
- * Links
- */
-a {
-    color: $brand-color;
+.brand a {
+    color: #4c5c96;
+    text-align: center;
+}
+
+.brand a:hover {
+    color: #333;
     text-decoration: none;
+}
 
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
-
-    &:hover {
-        color: $text-color;
-        text-decoration: underline;
-    }
+.img-profile {
+    display: block;
+    margin: 0 auto !important;
 }
 
 
 
-/**
- * Blockquotes
- */
-blockquote {
-    color: $grey-color;
-    border-left: 4px solid $grey-color-light;
-    padding-left: $spacing-unit / 2;
-    font-size: 18px;
-    letter-spacing: -1px;
-    font-style: italic;
+.social-nav {
+    margin-top: 24px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
 
-    > :last-child {
-        margin-bottom: 0;
+    a {
+        color: #999;
+        padding: 12px 0;
+        margin-left: 38px;
     }
 }
 
-
-
-/**
- * Code formatting
- */
-pre,
-code {
-    font-size: 15px;
-    border: 1px solid $grey-color-light;
-    border-radius: 3px;
-    background-color: #eef;
+.linkedin:hover {
+    color: #0077b5;
 }
 
-code {
-    padding: 1px 5px;
+.medium:hover {
+    color: #00ab6b;
 }
 
-pre {
-    padding: 8px 12px;
-    overflow-x: auto;
-
-    > code {
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
-    }
+.email:hover {
+    color: #4c5c96;
 }
 
+.github:hover {
+    color: #444;
+}
 
+.twitter:hover {
+    color: #4078c0;
+}
 
-/**
- * Wrapper
- */
-.wrapper {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
-    @extend %clearfix;
-
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
-    }
+.article-row {
+    display: block;
+    font-size: 21px;
+    text-decoration: none;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    color: #666;
 }
 
 
-
-/**
- * Clearfix
- */
-%clearfix {
-
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
+.article-title {
+    font-family: "ApexNewLight";
 }
 
+.article-row-tags {
 
+}
 
-/**
- * Icons
- */
-.icon {
+.article-pub-date {
+    color: #aaa;
+    font-size: 14px;
+}
 
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
+.tags-list {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
 
-        path {
-            fill: $grey-color;
-        }
-    }
+.tags-list li {
+    display: inline-block;
+    margin-left: 12px;
+}
+
+.tags-list li a {
+    font-size: 12px;
+}
+.article-title:hover {
+    color: #4c5c96;
+    /*font-family: "ApexNewBook";*/
+    text-decoration: none;
+}
+
+.article-row-summary {
+    color: #777;
+    font-size: 14px;
+}
+
+.article-row .article-date {
+    color: #aaa;
+}
+
+.tags-inline {
+    direction: ltr;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 6px;
+}
+
+.tags-inline li {
+    float: left;
+    display: inline;
+}
+
+.card-teal {
+    background-color: #009688 !important;
 }

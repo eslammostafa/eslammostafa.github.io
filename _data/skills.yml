@@ -13,6 +13,12 @@
 - title: PHP
   image: php.png
 
+- title: Nginx
+  image: nginx.png
+
+- title: RethinDB
+  image: rethinkdb.png
+
 - title: C#
   image: csharp.png
 

@@ -10,7 +10,6 @@ code {
     text-align: left;
     direction: ltr;
 
-    @extend %vertical-rhythm;
 
     .highlighter-rouge & {
       background: #444;
