@@ -18,15 +18,15 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://eslammostafa.com" # the base hostname & protocol for your site
 # url: "http://localhost:4000" # the base hostname & protocol for your site
 #twitter_username: jekyllrb
-github_username:  eslammostafa
+github_username:  objectizer
 linkedin_url: "http://linkedin.com/in/eslammostafa"
-twitter_username: emostafa_
+twitter_username: objectizer
 medium_url: https://medium.com/@eslammostafa
 long_description: >
     Programming is a passion that feeds my soul. I make sure to keep learning and trying
     bleeding edge technologies, i have concerned lately with Backend Development;
     lately i have been keeping eye on languages like Go. Sometimes i need to
     use Frontend technologies like Angular 2; and i am bulding the frontend
-    of my personal project "Chahbandr" with Angular 2.
+    of my personal project "Yadawe" with Angular 2.
 # Build settings
 markdown: kramdown
